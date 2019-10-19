@@ -1,13 +1,12 @@
-name=${nameParam:="elasticsearch"}
-version=${versionParam:="7.4.0"}
+name=${nameParam:="zookeeper"}
+version=${versionParam:="3.5"}
 network=${networkParam:="bridge"}
-image="docker.elastic.co/elasticsearch/elasticsearch"
+image="zookeeper"
 sudo docker run \
     --rm \
     -it \
     --name $name \
     --hostname $name \
     --network $network \
-    -e "discovery.type=single-node" \
     -d \
     $image:$version

@@ -1,5 +1,5 @@
 name=${nameParam:="kibana"}
-version=${versionParam:="7.2.0"}
+version=${versionParam:="7.4.0"}
 network=${networkParam:="bridge"}
 image="docker.elastic.co/kibana/kibana"
 elasticHost=${elasticHostParam:="elasticsearch"}

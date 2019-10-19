@@ -1,13 +1,12 @@
-name=${nameParam:="elasticsearch"}
+name=${nameParam:="logstash"}
 version=${versionParam:="7.4.0"}
 network=${networkParam:="bridge"}
-image="docker.elastic.co/elasticsearch/elasticsearch"
+image="docker.elastic.co/logstash/logstash"
 sudo docker run \
     --rm \
     -it \
     --name $name \
     --hostname $name \
     --network $network \
-    -e "discovery.type=single-node" \
     -d \
     $image:$version
