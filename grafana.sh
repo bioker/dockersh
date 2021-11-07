@@ -1,6 +1,6 @@
 name=${nameParam:="gf"}
-version=${versionParam:="5.4.3"}
-network=${networkParam:="bridge"}
+version=${versionParam:="7.5.10"}
+network=${networkParam:="personal"}
 volume=${volumeParam:=$name}
 image="grafana/grafana"
 sudo docker run \
@@ -10,5 +10,6 @@ sudo docker run \
     --hostname $name \
     --network $network \
     -d \
+    -p 3000:3000 \
     -v $volume:/var/lib/grafana \
     $image:$version

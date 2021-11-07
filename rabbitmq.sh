@@ -1,4 +1,4 @@
-name=${nameParam:="rbbt"}
+name=${nameParam:="rbt"}
 version=${versionParam:="3-management-alpine"}
 network=${networkParam:="bridge"}
 image="rabbitmq"

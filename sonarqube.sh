@@ -1,5 +1,5 @@
 name=${nameParam:="sonarqube"}
-version=${versionParam:="7.9.2-community"}
+version=${versionParam:="7.9.5-community"}
 network=${networkParam:="bridge"}
 image="sonarqube"
 sudo docker run \

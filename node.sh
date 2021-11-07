@@ -1,12 +1,12 @@
-name=${nameParam:="myjenkins"}
-version=${versionParam:="2.234-alpine"}
+name=${nameParam:="node"}
+version=${versionParam:="17-alpine"}
 network=${networkParam:="bridge"}
-image="jenkins/jenkins"
+image="node"
 sudo docker run \
     --rm \
-    -it \
     --name $name \
     --hostname $name \
     --network $network \
     -d \
-    $image:$version
+    $image:$version \
+    sleep infinity

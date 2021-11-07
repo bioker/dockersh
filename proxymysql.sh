@@ -2,7 +2,7 @@ name=${nameParam:="proxysql"}
 version=${versionParam:="2.0"}
 network=${networkParam:="bridge"}
 config=${configParam:="/tmp/proxysql.cnf"}
-image="severalnines/proxysql"
+image="proxysql/proxysql"
 sudo docker run \
     --rm \
     -it \

@@ -1,5 +1,5 @@
 name=${nameParam:="rds"}
-version=${versionParam:="5.0.4-alpine"}
+version=${versionParam:="6-alpine"}
 network=${networkParam:="bridge"}
 image="redis"
 sudo docker run \
@@ -8,5 +8,6 @@ sudo docker run \
     --name $name \
     --hostname $name \
     --network $network \
+    -p 6379:6379 \
     -d \
     $image:$version

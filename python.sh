@@ -1,7 +1,7 @@
-name=${nameParam:="myjenkins"}
-version=${versionParam:="2.234-alpine"}
+name=${nameParam:="python"}
+version=${versionParam:="3.10-alpine"}
 network=${networkParam:="bridge"}
-image="jenkins/jenkins"
+image="python"
 sudo docker run \
     --rm \
     -it \
